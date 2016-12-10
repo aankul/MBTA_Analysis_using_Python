@@ -1,11 +1,32 @@
-Performance Analysis of MBTA
-========================
+===========================================
+Performance Analysis of MBTA using Python
+===========================================
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+## Data Acquisition
 
-## Code Example
+**Boston’s Massachusetts Bay Transit Authority (MBTA)** operates the 4th busiest subway system in the U.S. after New York, Washington, and Chicago. If you live in or around the city you have probably ridden on it. The MBTA recently began publishing substantial amount of subway data through its public APIs. They provide the full schedule in General Transit Feed Specification (GTFS) format which powers Google’s transit directions. MBTA also releases yearly reports on Finances, Reliablility, Ridership and Customer Service. Also, at the end of the year, they release a pdf containing information about the wages of every worker at MBTA. For analysis perpose we have used the folloing data :- 
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+- MBTA Real-Time API
+- MBTA_Wages_2014 data (in pdf format)
+- MBTA_customersatisfaction_20150101-20161231 data from MBTA website
+- MBTA_financial_20150101-20161231 data from MBTA website
+
+Using the above data, I performed five analysis covering the following fields :
+- **Performance** -> Travel time and Dwell time
+- **Finance** -> Wage analysis, Revenue and Expenses
+- **Customer Satisfaction** -> Ratings and Surveys
+
+
+
+## Analysis 1
+
+At what time of the day, the probability of the train reaching the destination late is the highest?
+
+In Analysis 1, I analyzed the performance of MBTA with respect to travel time. Since it was not possible to calculate the travel time of every station to all the other stations, for analysis puspose, I have considered only path from Park Street to Harvard Square since it has most number of ridership, hence is the worst case. I calculated the number of times the train took longer than scheduled time to go from Park Street to Harvard Square. This shows the time at which the probability of train reacing late is highest.
+
+
+
+
 
 ## Motivation
 
