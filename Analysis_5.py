@@ -148,7 +148,7 @@ sizes1 = Response1Data.value.tolist()
 sizes2 = Response2Data.value.tolist()
 sizes3 = Response3Data.value.tolist()
 sizes4 = Response4Data.value.tolist()
-colors = ['yellowgreen', 'gold', 'lightskyblue', 'lightcoral']
+colors = ['yellowgreen', 'gold', 'lightskyblue', 'lightcoral', 'green', 'orange' , 'purple']
 
 
 # In[54]:
@@ -177,7 +177,7 @@ ax[1,1].set_title('Speed/travel time is good')
 ax[0,0].legend(labels, loc="right")
 ax[0,1].legend(labels, loc="best")
 ax[1,0].legend(labels, loc="right")
-ax[1,1].legend(labels, loc="right")
+ax[1,1].legend(labels, loc="best")
 
 # Set aspect ratio to be equal so that pie is drawn as a circle.
 ax[0,0].set_aspect('equal')
